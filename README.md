@@ -53,7 +53,7 @@ Check about crontab in the [Examples of typical use cases](#examples-of-typical-
 
 ## Examples of typical use cases
 
-### I've built the container, updated `storage/worklog.csv` file and ENV variables in the `docker-compose.yml` file. Now I want to run the script using the ENV variables only. How can I do that?
+#### I've built the container, updated `storage/worklog.csv` file and ENV variables in the `docker-compose.yml` file. Now I want to run the script using the ENV variables only. How can I do that?
 
 ```bash
 docker-compose exec worklog php bin/app.php --use-env-only
@@ -71,7 +71,7 @@ Creating jira-worklog-automation_worklog_run ... done
 Error: There was an error parsing JSON. Check that your request body is valid.
 ERROR: 1
 ```
-### I've built the container, updated `storage/worklog.csv` file and want to use console arguments (the interactive mode). How can I do that?
+#### I've built the container, updated `storage/worklog.csv` file and want to use console arguments (the interactive mode). How can I do that?
 ```bash
 docker-compose exec worklog php bin/app.php --email=email@example.com --token=EXAMPLETOKEN --current-day-only=true
 ```
@@ -87,7 +87,7 @@ Options:
 --help                    Display this help message
 ```
 
-### I want to run in automatically every day at 08:00. How can I do that?
+#### I want to run in automatically every day at 08:00. How can I do that?
 
 Crontab is working by default if you are running the app via Docker. It will run the command `php /var/www/worklog/bin/app.php --use-env-only` every day at 08:00. And will write its logs to the `/var/www/worklog/var/log/cronjob.log` file. You can crob job as you wish like that:
 1. Edit `crontab.txt` file, check https://crontab.guru/ for more info.
