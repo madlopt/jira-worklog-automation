@@ -1,0 +1,2 @@
+0 8 * * * php /var/www/worklog/bin/app.php --use-env-only >> /var/www/worklog/var/log/cronjob.log 2>&1
+# don't delete the following line, it is used by the cronjob

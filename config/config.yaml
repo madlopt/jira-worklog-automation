@@ -1,0 +1,12 @@
+# Path to the storage directory
+WORKLOG_APP_STORAGE_PATH: storage
+# URL of JIRA Cloud instance
+WORKLOG_APP_JIRA_URL: https://your-jira-instance.atlassian.net
+# Log only current day's data
+WORKLOG_APP_CURRENT_DAY_ONLY: true
+# JIRA user email
+WORKLOG_APP_JIRA_USER_EMAIL: example@your-jira-instance.atlassian.net
+# JIRA API token
+WORKLOG_APP_JIRA_API_TOKEN: your-api-token
+# Your daily working hours, it won't log more than this number of hours
+WORKLOG_APP_DAILY_WORKING_HOURS_LIMIT: 8

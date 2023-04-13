@@ -1,0 +1,16 @@
+version: '3'
+services:
+  worklog:
+    build: .
+    volumes:
+      - ./config:/var/www/worklog/config
+      - ./storage:/var/www/worklog/storage
+      - ./var/log:/var/www/worklog/var/log
+    working_dir: /var/www/worklog
+    environment:
+      WORKLOG_APP_STORAGE_PATH: "storage"
+      WORKLOG_APP_JIRA_URL: "https://your-jira-instance.atlassian.net"
+      WORKLOG_APP_CURRENT_DAY_ONLY: "true"
+      WORKLOG_APP_JIRA_USER_EMAIL: "example@jira.com"
+      WORKLOG_APP_JIRA_API_TOKEN: "your-api-token"
+    stdin_open: true
