@@ -125,6 +125,8 @@ If you don't have it and can't (don't want to) install, please look at the [How 
     ```
 ### EVN variables
 
+There is `config/config.yaml` file with the default values for ENV variables which the app will create if they are exist in the config. 
+
 `WORKLOG_APP_STORAGE_PATH` - relative path to the storage folder. Default: `storage`
 
 `WORKLOG_APP_JIRA_URL` - Jira URL. You must change it, otherwise it won't work.
