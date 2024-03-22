@@ -123,7 +123,7 @@ If you don't have it and can't (don't want to) install, please look at the [How 
     ```bash
     php bin/app.php --use-env-only
     ```
-### EVN variables
+### ENV variables
 
 There is `config/config.yaml` file with the default values for ENV variables which the app will create if they are exist in the config. 
 
